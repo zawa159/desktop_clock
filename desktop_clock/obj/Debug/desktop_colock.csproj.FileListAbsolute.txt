@@ -1,0 +1,10 @@
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\bin\Debug\desktop_colock.exe.config
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\bin\Debug\desktop_colock.exe
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\bin\Debug\desktop_colock.pdb
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.csproj.AssemblyReference.cache
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.Form1.resources
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.Properties.Resources.resources
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.csproj.GenerateResource.cache
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.csproj.CoreCompileInputs.cache
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.exe
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_colock\desktop_colock\obj\Debug\desktop_colock.pdb
