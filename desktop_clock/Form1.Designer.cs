@@ -43,10 +43,12 @@
             this.NowTime.Font = new System.Drawing.Font("MS UI Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.NowTime.Location = new System.Drawing.Point(0, 0);
             this.NowTime.Name = "NowTime";
-            this.NowTime.Size = new System.Drawing.Size(272, 66);
+            this.NowTime.Size = new System.Drawing.Size(272, 77);
             this.NowTime.TabIndex = 0;
             this.NowTime.Text = "00:00:00";
             this.NowTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NowTime.MouseDown += new System.Windows.Forms.MouseEventHandler(this.NowTime_MouseDown);
+            this.NowTime.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NowTime_MouseMove);
             // 
             // contextMenuStrip1
             // 
@@ -66,12 +68,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 66);
+            this.ClientSize = new System.Drawing.Size(272, 77);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
             this.MinimumSize = new System.Drawing.Size(188, 93);
             this.Name = "Form1";
-            this.Text = "desktop_clock";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
