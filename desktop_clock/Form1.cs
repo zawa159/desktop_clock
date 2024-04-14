@@ -29,13 +29,15 @@ namespace desktop_colock
 
             //常に手前に表示
             this.TopMost = !this.TopMost;
+
         }
 
+        //現在時刻を取得
         private void Clock_Tick(object sender, EventArgs e)
         {
             date = DateTime.Now;  //現在日時を取得
-            nowDate = (date.ToString("HH:mm:ss")); // ラベルのテキストを更新
-            NowTime.Text = nowDate; // カウンターの値をテキストに表示し、カウンターをインクリメント
+            nowDate = (date.ToString("HH:mm:ss")); // ラベルのテキストを作成
+            NowTime.Text = nowDate; // 時刻をラベルに表示
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,3 +53,12 @@ namespace desktop_colock
         }
     }
 }
+
+
+/*
+ * ・クリック時に移動できる
+ * ・サイズ記憶
+ * ・起動時のポジションを記憶
+ * ・サイズに合わせて文字サイズを変更
+ * ・
+ */

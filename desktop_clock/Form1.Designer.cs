@@ -37,15 +37,13 @@
             // 
             // NowTime
             // 
-            this.NowTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.NowTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NowTime.ContextMenuStrip = this.contextMenuStrip1;
+            this.NowTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NowTime.Font = new System.Drawing.Font("MS UI Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.NowTime.Location = new System.Drawing.Point(-9, -8);
+            this.NowTime.Location = new System.Drawing.Point(0, 0);
             this.NowTime.Name = "NowTime";
-            this.NowTime.Size = new System.Drawing.Size(290, 83);
+            this.NowTime.Size = new System.Drawing.Size(272, 66);
             this.NowTime.TabIndex = 0;
             this.NowTime.Text = "00:00:00";
             this.NowTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -71,6 +69,7 @@
             this.ClientSize = new System.Drawing.Size(272, 66);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
+            this.MinimumSize = new System.Drawing.Size(188, 93);
             this.Name = "Form1";
             this.Text = "desktop_clock";
             this.Load += new System.EventHandler(this.Form1_Load);
