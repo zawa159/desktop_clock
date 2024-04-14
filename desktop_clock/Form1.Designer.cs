@@ -1,4 +1,4 @@
-﻿namespace desktop_colock
+﻿namespace desktop_clock
 {
     partial class Form1
     {
@@ -39,9 +39,10 @@
             // 
             this.NowTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NowTime.ContextMenuStrip = this.contextMenuStrip1;
+            this.NowTime.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.NowTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NowTime.Font = new System.Drawing.Font("MS UI Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.NowTime.Location = new System.Drawing.Point(0, 0);
+            this.NowTime.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.NowTime.Name = "NowTime";
             this.NowTime.Size = new System.Drawing.Size(272, 77);
             this.NowTime.TabIndex = 0;
@@ -71,8 +72,11 @@
             this.ClientSize = new System.Drawing.Size(272, 77);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
+            this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.MinimumSize = new System.Drawing.Size(188, 93);
             this.Name = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

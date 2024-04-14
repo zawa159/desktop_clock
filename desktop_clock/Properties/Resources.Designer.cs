@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace desktop_colock.Properties
+namespace desktop_clock.Properties
 {
 
 

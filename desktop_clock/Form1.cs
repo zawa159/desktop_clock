@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace desktop_colock
+namespace desktop_clock
 {
     public partial class Form1 : Form
     {
@@ -82,13 +82,12 @@ namespace desktop_colock
                 this.Top += e.Y - mousePoint.Y;
             }
         }
+
+        //フォームを閉じる前の動作
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // フォームが閉じる直前にプロパティを保存する
+            Properties.Settings.Default.Save(); // 設定を保存
+        }
     }
 }
-
-
-/*
- * ・サイズ記憶
- * ・起動時のポジションを記憶
- * ・サイズに合わせて文字サイズを変更
- * ・
- */

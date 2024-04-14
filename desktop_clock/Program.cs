@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace desktop_colock
+namespace desktop_clock
 {
     internal static class Program
     {
