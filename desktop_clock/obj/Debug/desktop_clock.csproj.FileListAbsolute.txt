@@ -22,9 +22,9 @@ C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\bin\Debug\de
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\bin\Debug\desktop_clock.exe
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\bin\Debug\desktop_clock.pdb
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.csproj.AssemblyReference.cache
+C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.Form1.resources
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.Properties.Resources.resources
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.csproj.GenerateResource.cache
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.csproj.CoreCompileInputs.cache
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.exe
 C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.pdb
-C:\Users\kouta03\sagyou\Programs\WinApp\desktop_clock\desktop_clock\obj\Debug\desktop_clock.Form1.resources

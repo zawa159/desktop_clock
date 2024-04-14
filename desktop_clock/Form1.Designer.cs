@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.NowTime = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,7 +41,7 @@
             this.NowTime.ContextMenuStrip = this.contextMenuStrip1;
             this.NowTime.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.NowTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowTime.Font = new System.Drawing.Font("MS UI Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.NowTime.Font = new System.Drawing.Font("Arial Narrow", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NowTime.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.NowTime.Name = "NowTime";
             this.NowTime.Size = new System.Drawing.Size(167, 50);
@@ -70,12 +69,13 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(167, 50);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.Name = "Form1";
             this.ShowInTaskbar = false;
