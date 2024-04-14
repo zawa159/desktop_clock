@@ -33,7 +33,6 @@ namespace desktop_clock
 
             //常に手前に表示
             this.TopMost = !this.TopMost;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)

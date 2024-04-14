@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.NowTime = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,7 @@
             this.NowTime.Font = new System.Drawing.Font("MS UI Gothic", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.NowTime.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.NowTime.Name = "NowTime";
-            this.NowTime.Size = new System.Drawing.Size(272, 77);
+            this.NowTime.Size = new System.Drawing.Size(167, 50);
             this.NowTime.TabIndex = 0;
             this.NowTime.Text = "00:00:00";
             this.NowTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,15 +68,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 77);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(167, 50);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
-            this.MinimumSize = new System.Drawing.Size(188, 93);
             this.Name = "Form1";
+            this.ShowInTaskbar = false;
+            this.Text = "desktop_clock";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
