@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,8 +31,10 @@ namespace desktop_clock
             this.BackColor = Color.FromArgb(0x15, 0x15, 0x1E); // 背景色を指定
             NowTime.Font = new Font("Arial Narrow", 32.25f); //表示時間のフォント設定
             NowTime.ForeColor = Color.FromArgb(0xDA, 0xF6, 0xFF); ; //表示時間の文字色
-            
-
+            // ラベルの描画イベントを最適化する
+            SetStyle(ControlStyles.OptimizedDoubleBuffer |
+                     ControlStyles.AllPaintingInWmPaint |
+                     ControlStyles.UserPaint, true);
 
             //タイマーの準備
             timer = new Timer();  //タイマーnew

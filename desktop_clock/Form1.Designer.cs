@@ -41,10 +41,10 @@
             this.NowTime.ContextMenuStrip = this.contextMenuStrip1;
             this.NowTime.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.NowTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NowTime.Font = new System.Drawing.Font("Arial Narrow", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NowTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NowTime.Location = global::desktop_clock.Properties.Settings.Default.MyLocation;
             this.NowTime.Name = "NowTime";
-            this.NowTime.Size = new System.Drawing.Size(167, 50);
+            this.NowTime.Size = new System.Drawing.Size(203, 52);
             this.NowTime.TabIndex = 0;
             this.NowTime.Text = "00:00:00";
             this.NowTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -70,7 +70,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(167, 50);
+            this.ClientSize = new System.Drawing.Size(203, 52);
             this.ControlBox = false;
             this.Controls.Add(this.NowTime);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Location", global::desktop_clock.Properties.Settings.Default, "MyLocation", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
