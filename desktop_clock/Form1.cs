@@ -19,6 +19,7 @@ namespace desktop_clock
         private int interval = 1000; // タイマーの間隔を1000ミリ秒（1秒）に設定
         private DateTime date;
         private String nowDate;
+        private Color setBackColor = Color.FromArgb(0x15, 0x15, 0x1E);  // 背景色を設定
 
         //画面を掴んで移動
         private Point mousePoint;  //マウスのクリック位置を記憶
@@ -28,7 +29,8 @@ namespace desktop_clock
             InitializeComponent();
 
             //画面設定
-            this.BackColor = Color.FromArgb(0x15, 0x15, 0x1E); // 背景色を指定
+            this.BackColor = setBackColor; // 背景色を指定
+            this.TransparencyKey = setBackColor; // 透過させる（透過させる色を指定）
             NowTime.Font = new Font("Arial Narrow", 32.25f); //表示時間のフォント設定
             NowTime.ForeColor = Color.FromArgb(0xDA, 0xF6, 0xFF); ; //表示時間の文字色
             // ラベルの描画イベントを最適化する
@@ -63,10 +65,10 @@ namespace desktop_clock
         {
             //現在日時を取得
             date = DateTime.Now;
-            
+
             // ラベルのテキストを作成
             nowDate = (date.ToString("HH:mm:ss"));
-            
+
             // 時刻をラベルに表示
             NowTime.Text = nowDate;
         }
@@ -97,6 +99,26 @@ namespace desktop_clock
         {
             // フォームが閉じる直前にプロパティを保存する
             Properties.Settings.Default.Save(); // 設定を保存
+        }
+
+        private void 透過ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // クリック時に値を反転させる
+            var menuItem = sender as ToolStripMenuItem;
+
+            // チェック状態を反転させる
+            menuItem.Checked = !menuItem.Checked;
+
+            if (menuItem.Checked)
+            {
+                // 透過を有効にする
+                this.TransparencyKey = setBackColor; // 透過させる色を指定
+            }
+            else
+            {
+                // 透過を無効にする
+                this.TransparencyKey = Color.Empty; // 透過を解除
+            }
         }
     }
 }

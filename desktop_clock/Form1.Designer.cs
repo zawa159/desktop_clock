@@ -32,6 +32,7 @@
             this.NowTime = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.透過ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,17 +54,28 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.透過ToolStripMenuItem,
             this.終了ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(99, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 80);
             // 
             // 終了ToolStripMenuItem
             // 
             this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
-            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.終了ToolStripMenuItem.Text = "終了";
             this.終了ToolStripMenuItem.Click += new System.EventHandler(this.終了ToolStripMenuItem_Click);
+            // 
+            // 透過ToolStripMenuItem
+            // 
+            this.透過ToolStripMenuItem.Checked = true;
+            this.透過ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.透過ToolStripMenuItem.Name = "透過ToolStripMenuItem";
+            this.透過ToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.透過ToolStripMenuItem.Text = "透過";
+            this.透過ToolStripMenuItem.Click += new System.EventHandler(this.透過ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -92,6 +104,7 @@
         private System.Windows.Forms.Label NowTime;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 終了ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 透過ToolStripMenuItem;
     }
 }
 
